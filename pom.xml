@@ -38,12 +38,12 @@
             </dependency>
             <dependency>
                 <groupId>com.djc</groupId>
-                <artifactId>common</artifactId>
+                <artifactId>region</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.djc</groupId>
-                <artifactId>region</artifactId>
+                <artifactId>common</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
@@ -85,11 +85,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <!--dockerfile maven plugin-->
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>1.4.6</version>
+                <version>${dockerfile.maven.version}</version>
                 <executions>
                     <execution>
                         <id>default</id>
@@ -100,12 +99,11 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <!--<useMavenSettingsForAuth>true</useMavenSettingsForAuth>-->
                     <contextDirectory>${project.basedir}</contextDirectory>
-                    <repository>scene</repository>
-                    <tag>1</tag>
+                    <repository>192.168.2.110:5000/docker</repository>
+                    <tag>${project.version}</tag>
                     <buildArgs>
-                        <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+                        <WAR_FILE>${project.build.finalName}.war</WAR_FILE>
                     </buildArgs>
                 </configuration>
             </plugin>

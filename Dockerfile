@@ -1,4 +1,4 @@
-FROM openjdk:8-jre
-MAINTAINER jiacai <jiacai@goeasy.io>
-
-ADD target/${JAR_FILE} /usr/share/myservice/myservice.jar
+FROM ubuntu:18.04
+MAINTAINER jiacai
+ADD sso/${WAR_FILE} /usr/share/service/sso.war
+ADD center/${WAR_FILE} /usr/share/service/center.war
