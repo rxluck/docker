@@ -24,6 +24,7 @@
     7. 运行容器启动仓库服务：
         *. docker run -d -v /opt/registry:/var/lib/registry -p 5000:5000 --name repository registry
     8. 下载项目配置maven和java的环境变量
+        * 如果想在centos机器上操作需要在centos机器上配置java和maven环境
 ### 二.windows设置访问docker服务和docker私有仓库
     1. 配置docker服务的ip或域名环境变量
         * 设置环境变量：DOCKER_HOST=tcp:ip:2375
