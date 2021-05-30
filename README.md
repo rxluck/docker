@@ -1,6 +1,6 @@
 # maven dockerfile plugin 构建项目镜像
 ## 一.maven dockerfile plugin使用步骤
-### 一.linux安装docker以及docker私有仓库
+### 一.centos安装docker以及docker私有仓库
     1. 下载docker(默认端口2375)
         * yum -y install docker
     2. 设置docker 系统开机启动
