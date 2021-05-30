@@ -1,9 +1,9 @@
 #maven dockerfile plugin的用法
 
 ##一.maven dockerfile plugin使用步骤
-    一.linux
-        a.下载docker(默认端口2375)
-        b.设置docker 系统开机启动
+    ###一.linux
+        ####a.下载docker(默认端口2375)
+        ####b.设置docker 系统开机启动
             1.systemctl enable docker
         c.配置远程访问
             1.进入docker.service文件
