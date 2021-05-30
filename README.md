@@ -5,7 +5,7 @@
         * yum -y install docker
     2. 设置docker 系统开机启动
         * systemctl enable docker
-    3. 开启远程访问权限
+    3. 开启docker远程访问权限
         * 进入docker.service文件：vim /lib/systemd/system/docker.service
         * 修改配置：ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
     4. 宿主机防火墙开启2375端口
