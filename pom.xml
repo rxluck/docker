@@ -11,7 +11,7 @@
     <groupId>com.djc</groupId>
     <artifactId>docker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Docker</name>
+    <name>docker</name>
     <description>dockerfile maven plugin</description>
     <properties>
         <java.version>1.8</java.version>
